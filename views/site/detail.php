@@ -18,11 +18,7 @@
 
 <div class="col-xl-8 py-5 px-md-5" style="margin-bottom:100px">
 <h1 class="text-center" style="text-align:center"><?=$model->title?></h1>
-	<span class="desc">Exam Date:<?=$model->exam_date?> </span> <span class="desc" style="margin-left:500px">Official website: <a target="_blank" href="<?=$model->website?>"><?=$model->website?></a></span>
-	<div style="clear:both"></div>
-	<span class="desc">Total Vacancies:<?=$model->total_vacancies?> </span> <span class="desc" style="margin-left:466px">Last Date to apply: <?=$model->last_date_to_apply?></span>
-	<div style="clear:both"></div>
-	<span class="desc">Admit card:<?=$model->admit_card?> </span> <span class="desc" style="margin-left:500px">Eligibility: <?=$model->eligibility?></span>
+
 	<div style="clear:both"></div>
 	<h4><?=$model->short_desc?></h4>
 	<h3 style="text-align:right;"> <?=Yii::$app->formatter->asDate($model->date, 'dd-M-Y')?></h3>

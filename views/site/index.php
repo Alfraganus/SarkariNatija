@@ -6,8 +6,26 @@ use yii\helpers\Url;
 ?>
 
 <div id="main-container">
+<table>
+<?php $test = 10;?>
+	<tr>
 
-	<div id="content">
+		<?php for($i=0;$i<=25;$i++): ?>
+		<?php if ($i % 4 == 0){echo "<tr>";} ?>
+
+			<td><?= $i?></td>
+
+		<?php endfor;?>
+
+
+
+
+
+
+	</tr>
+	</tbody>
+</table>
+
 		<h1 style="text-align:center">Categories</h1>
 		<div class="grid" style="margin-bottom:50px">
 			<?php use app\modules\admin\models\ChildCategories;

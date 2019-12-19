@@ -100,19 +100,23 @@
 		}
 
 		#sidebar {
-			display: table-cell;
-			width: 15%;
+			/*display: table-cell;*/
+			width: 100%;
 			vertical-align: top;
+			word-wrap: break-word;
+			display:inline-block;
 			/*background-color: #8e44ad;*/
 		}
 
 		#sidebar a {
-			display: block;
+			/*display: block;*/
 			font-weight:bold;
 			padding: 10px;
 			color:black;
 			margin: 15px 0 0 0;
 			text-decoration: none;
+			word-wrap: break-word;
+			display:inline-block;
 		}
 
 		#sidebar a:hover {
@@ -133,6 +137,7 @@
 			padding-left: 30px;
 			font-family: Georgia, nimbus roman no9 l, times new roman, Times, serif;
 			color: #fff;
+			word-wrap: break-word;
 			text-align: center;
 			text-transform: uppercase;
 		}
@@ -146,10 +151,11 @@
 			border-color: #000;
 		}
 		#hmenu {
-			height: 55px;
+			height: auto;
 			background-color: #8c384d;
 			margin-top: 0;
 			width: 100%;
+			display:inline-block;
 		}
 
 		#hmenu ul {
@@ -201,15 +207,120 @@
 			margin: 0 100px 0 100px;
 			bottom: 0;
 			/*width: 100%;*/
-
 			height:40px;
 			background-color: #8c384d;
 			color: white;
 			text-align: center;
 		}
-		.desc {
+
+		.descleft {
 			font-weight:bold;
 			font-size:18px;
+		}
+		.descright {
+			margin-left:500px;
+			font-weight:bold;
+			font-size:18px;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			width: 100%;
+			/*border: 1px solid #ddd;*/
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+.table1 {
+	margin: 2px;
+	text-align:center;
+	/*width: 98.5%;*/
+	height: 60px;
+	width: 245px;
+	background-color: #868a08;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+		@media only screen and (max-width: 600px) {
+			#hmenu {
+				width:1000px;
+			}
+			.descright {
+				margin-left:140px;
+			}
+
+			#main-container p {
+				font-size: 14px !important;
+				text-align:left !important;
+				padding-left:5px;
+			}
+
+
+			#main-container h1 {
+				font-size: 16px !important;
+ }
+			#head-title {
+
+				font-size:18px;
+			}
+			#main-container {
+				width:1000px;
+				display: inline-block;
+			}
+			#header {
+				width:1000px;
+			}
+
+			.footer {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+				height:60px;
+				width:1000px;
+				display: inline-block
+			}
+
+			.grid {
+				flex-wrap: wrap;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				grid-auto-rows: minmax(150px, auto);
+				grid-gap: 1em;
+				padding:1px 1px 0 1px;
+			}
+			.module {
+				background: #eaeaea;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: auto;
+
+				/* Flex Fallback */
+				margin-left: 1px;
+				margin-right: 1px;
+				flex: 1 1 200px;
+			}
+
+
+			.container {
+				display: inline-block;
+				width:100%;
+				margin:0 0px 0 0px;
+			}
+
+
+			#content {
+				display: inline-block;
+				/*display: table-cell;*/
+				width: 100%;
+				vertical-align: top;
+				padding: 0 0 0 0;
+			}
+
 		}
 	</style>
 </head>
@@ -221,7 +332,7 @@
 	<div id="header">
 		<div id="head-title">
 			<h1 style="font-size: 26px">Sarkari natija</h1>
-			<h3 style="font-size: 26px">www.sarkarinatija.com</h3>
+			<h3>www.sarkarinatija.com</h3>
 		</div>
 	</div>
 
